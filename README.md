@@ -40,7 +40,17 @@ Création d'un dossier, installation d'un ENV, de Django puis création du blog
   l'ordre d'affichage par défaut des articles dans l'interface d'administration ainsi que le nom affiché (par défaut, l'interface afficherait le nom du modèle, donc BlogPost)
 - ajout de la méthode __str__ pour utiliser le titre des articles
 - ajout du slug automatiquement en fonction du titre de l'article. Si aucun slug n'est indiqué par l'auteur de l'article, on utilise slugify sur le titre de l'article pour en générer un automatiquement
-- 
+- Maintenant que notre modèle est créé, nous allons pouvoir créer les migrations et les appliquer pour créer les tables dans la base de données de notre projet.
+- Nous allons ainsi également appliquer les migrations de base de Django qui vont créer les tables pour la gestion des utilisateurs.
+- python manage.py makemigrations et python manage.py migrate
+- Ajout du modèle dans l'interface administration.
+- Avant d'ajouter le modèle, nous allons déjà créer un utilisateur admin pour nous connecter à l'interface d'administration. C'est également avec cet utilisateur que nous signerons les articles (dans ce projet, nous ne gérons pas la possibilité d'ajouter plusieurs auteurs. Le seul auteur des articles sera donc l'utilisateur admin).
+- Pour ça, nous allons utiliser la commande : python manage.py createsuperuser 
+- Nous avons un utilisateur, maintenant il est temps de se connecter à l'interface admin 
+- python manage.py runserver
+- sauf que pas d'articles pour l'instant ... pas possible d'en ajouter également 
+- Il faudra ajouter les modèles que nous souhaitons afficher dans admin.py dossier posts
+
 
 
 

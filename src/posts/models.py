@@ -37,6 +37,7 @@ class BlogPost(models.Model):
         return self.title
 
     # ajout du slug automatiquement en fonction du titre de l'article.
+    # Pas de slug indiqué par l'auteur de l'article, on utilise slugify sur le titre de l'article pour en générer un.
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.title)
