@@ -50,7 +50,7 @@ Création d'un dossier, installation d'un ENV, de Django puis création du blog
 - python manage.py runserver
 - sauf que pas d'articles pour l'instant ... pas possible d'en ajouter également 
 - Il faudra ajouter les modèles que nous souhaitons afficher dans admin.py dossier posts
-
+- Une fois les modèles ok vous pouvez lancer le runserver et commencer vos articles, le CRUD est en place !!
 
 
 
