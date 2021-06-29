@@ -19,6 +19,18 @@ Création d'un dossier, installation d'un ENV, de Django puis création du blog
 - ALTER ROLE blogadmin SET client_encoding TO 'utf8';
 - ALTER ROLE blogadmin SET default_transaction_isolation TO 'read committed';
 - Les accés à notre utilisateur : GRANT ALL PRIVILEGES ON DATABASE blog TO blogadmin;
+- Configuration de la variable DATABASES dans setting.py
+- DATABASES = {
+    - 'default': {
+        - 'ENGINE': 'django.db.backends.postgresql',
+        - 'NAME': 'blog',
+        - 'USER': 'blogAdmin',
+        - 'PASSWORD': '1234',
+        - 'HOST': 'localhost',
+        - 'PORT': '5432',
+    - }
+- }
+- localhost = 127.0.0.1 (adresse ip locale de l'ordinateur)
 
 
 ### Pré-requis
