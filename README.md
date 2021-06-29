@@ -31,6 +31,17 @@ Création d'un dossier, installation d'un ENV, de Django puis création du blog
     - }
 - }
 - localhost = 127.0.0.1 (adresse ip locale de l'ordinateur)
+- création d'une application 'posts' pour la gestion des articles du blog
+- Dans le dossier src : python manage.py startapp posts (un dossier posts est présent)
+- Ajout de l'application dans le fichier setting.py variable INSTALLED_APPS ligne 38 'posts'
+- Dans le fichier models.py de l'application posts nous allons créer un modèle pour sauvegarder nos articles dans la database
+- class BlogPost(models.Model):
+- Nous allons rajouter quelques informations sur le modèle, notamment une classe Meta qui va nous permettre de modifier 
+  l'ordre d'affichage par défaut des articles dans l'interface d'administration ainsi que le nom affiché (par défaut, l'interface afficherait le nom du modèle, donc BlogPost)
+- ajout de la méthode __str__ pour utiliser le titre des articles
+- ajout du slug automatiquement en fonction du titre de l'article. Si aucun slug n'est indiqué par l'auteur de l'article, on utilise slugify sur le titre de l'article pour en générer un automatiquement
+- 
+
 
 
 ### Pré-requis
