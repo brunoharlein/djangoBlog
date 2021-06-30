@@ -51,6 +51,10 @@ Création d'un dossier, installation d'un ENV, de Django puis création du blog
 - sauf que pas d'articles pour l'instant ... pas possible d'en ajouter également 
 - Il faudra ajouter les modèles que nous souhaitons afficher dans admin.py dossier posts
 - Une fois les modèles ok vous pouvez lancer le runserver et commencer vos articles, le CRUD est en place !!
+- En route pour du HTML ! création dans SRC d'un dossier templates qui contiendra les fichiers communs à notre projet et non à une application en particulier.
+- Dans le dossier templates création du fichier base.html.
+- Il serait bien que Django trouve ce fichier ! Il faut donc modifier le settings.py à la variable : TEMPLATES
+- Dans le fichier base.html, nous insérons les balises HTML qui seront communes à toutes nos pages, ainsi que deux blocs dans lesquels nous insérerons des données par la suite (un bloc title pour le titre de la page et un bloc content pour le contenu)
 
 
 
